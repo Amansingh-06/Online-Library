@@ -1,0 +1,261 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  /* Light background */
+  color: #333;
+  
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #34495e;
+  /* Dark Navigation Bar */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1abc9c;
+  /* Link Hover Color */
+}
+
+/* Home Page Styles */
+.home {
+  background-image: url('https://storage.googleapis.com/a1aa/image/6Rl6iSFl9h6RDRMZ36pijBpLSHVeiOQNyizShzBnWcBBVsyJA.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: rgb(252, 24, 12);
+  gap: 35px;
+}
+
+
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.home h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+/* Category Links */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+  /* Space between cards */
+}
+
+.category-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  width: 200px;
+  /* Fixed width for uniformity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.category-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styles */
+.button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  /* Space between button and content */
+}
+
+/* Popular Books List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+.Link{
+    color: #2980b9;
+      /* Link color */
+      text-decoration: none;
+      font-weight: bold;
+}
+.Link:hover{
+  text-decoration: underline;
+}
+
+ul li {
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Light background for each book */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+  /* Lift effect on hover */
+}
+
+ul li a {
+  color: #2980b9;
+  /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  /* Underline on hover */
+}
+
+.button:hover {
+  background-color: #1abc9c;
+}
+.popular_book{
+  display: flex;
+  justify-content: center;
+ 
+  
+ 
+}
+.popular_card{
+  
+  padding: 20px 5px;
+  text-align: center;
+  margin-top: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+.popularbook_home{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+}
+
+/* Browse Books Styles */
+.container {
+  width: 85%;
+  margin: 20px auto;
+  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+ul li {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+}
+
+/* Input Styles */
+input[type="text"] {
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+textarea{
+  padding: 12px 20px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    font-size: 1rem;
+  }
+
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 90%;
+    /* Full width on small screens */
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home h2 {
+    font-size: 1.5rem;
+  }
+}
